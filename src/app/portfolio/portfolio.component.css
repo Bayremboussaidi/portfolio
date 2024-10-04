@@ -1,3 +1,6 @@
+.col {
+    background-color: black;
+}
 .skills-container {
     display: flex;
     flex-wrap: wrap;

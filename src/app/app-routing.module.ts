@@ -7,6 +7,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { EducationComponent } from './education/education.component';
 import { ContactComponent } from './contact/contact.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { CertificationComponent } from './certification/certification.component';
+
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -17,6 +19,7 @@ const routes: Routes = [
   { path: 'education', component: EducationComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'experience', component: ExperienceComponent },
+  { path: 'certification', component: CertificationComponent },
   { path: '**', redirectTo: '/home' }
 
 ];

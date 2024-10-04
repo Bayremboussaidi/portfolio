@@ -1,3 +1,7 @@
 *, ::after, ::before {
     z-index: 9;
 }
+
+.col {
+    background-color: black;
+}

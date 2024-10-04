@@ -4,7 +4,9 @@
     perspective: 1000px; 
     max-height: 700px;
     overflow-y: auto;
+    background-color: black;
   }
+  
   .experience-section ::-webkit-scrollbar {
     width: 8px; 
   }

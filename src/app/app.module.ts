@@ -13,10 +13,12 @@ import { PhoneComponent } from './phone/phone.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
 import { SkillsComponent } from './skills/skills.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'; 
+import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome'; 
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatDialogModule } from '@angular/material/dialog';
 import { RouterModule } from '@angular/router'; // Import RouterModule
+import { faAngular, faAws, faDocker, faGit, faJava, faLinux } from '@fortawesome/free-brands-svg-icons';
+import { CertificationComponent } from './certification/certification.component';
 
 
 @NgModule({
@@ -31,7 +33,8 @@ import { RouterModule } from '@angular/router'; // Import RouterModule
     PhoneComponent,
     PortfolioComponent,
     ProjectDetailComponent,
-    SkillsComponent
+    SkillsComponent,
+    CertificationComponent
     
     
   ],
@@ -47,4 +50,8 @@ import { RouterModule } from '@angular/router'; // Import RouterModule
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(library: FaIconLibrary) {
+    library.addIcons(faAngular, faLinux, faAws, faJava, faGit, faDocker);
+  }
+}

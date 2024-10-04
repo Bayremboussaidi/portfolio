@@ -17,6 +17,7 @@
     .main-container{
         max-height: 700px;
         padding-bottom: 3rem;
+        background-color: black;
     }
 
 }
@@ -28,4 +29,8 @@
 }
 .typewriter{
     margin-bottom: 2rem;
+}
+
+.col {
+    background-color: black;
 }
