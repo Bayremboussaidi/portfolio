@@ -8,29 +8,22 @@ import { Component, OnInit } from '@angular/core';
 export class ExperienceComponent implements OnInit {
 
   experiences = [
+   
     {
       id: '01',
-      title: 'Software Development Engineer (Intern)',
-      company: 'Advanced Derivative Solutions',
-      date: 'February 2024 - July 2024',
-      description: 'Developed a chat module to ensure real-time communication between Private Equity firms and investors, along with an onboarding solution for investors.',
-      tools: ['MySQL', 'Spring Boot', 'Angular']
+      title: 'Software Develop (Intern)',
+      company: 'Global Enr - Misfat',
+      date: 'juin 2024 - Aout 2024',
+      description: 'Developed an intern application using Angular for the front-end and Node.js with Express for the back-end, implemented JWT for secure authentication and authorization, containerized the application using Docker and pushed images to Docker Hub, and set up a CI/CD pipeline with Jenkins triggered by GitHub commits for automated building and deployment.',
+      tools: ['Docker', 'Jenkins', 'react' , 'node']
     },
     {
       id: '02',
-      title: 'Devops Engineer (Intern)',
-      company: 'Tunisian Filter Company - Misfat',
-      date: 'September 2023 - October 2023',
-      description: 'Deployed two web applications: Managed CI/CD pipeline, automated builds, tests, and deployment of the QRQC application on a Docker container network. Upgraded the application to version 7.4 of Alfresco using containerization.',
-      tools: ['Docker', 'Jenkins', 'Hyper-V']
-    },
-    {
-      id: '03',
-      title: 'Web Developer (Intern)',
-      company: 'Tunisian Filter Company - Misfat',
+      title: 'data analyst (Intern)',
+      company: 'clenolia - france',
       date: 'July 2022 - August 2022',
-      description: 'Created a QRQC web application to manage incidents, schedule meetings, and store corrective actions. Implemented Data Warehouse to help decision-makers.',
-      tools: ['Spring Boot', 'Angular', 'SQL Server']
+      description: 'Developed python web scraping scripts to extract data from log files .',
+      tools: ['python']
     }
   ];
   constructor() { }

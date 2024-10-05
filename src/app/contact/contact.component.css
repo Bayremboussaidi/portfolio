@@ -1,13 +1,13 @@
-
-.contact-container {
+/*.contact-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    max-height: 600px;
-    overflow-y: auto;
+    max-height: 800px;
+    overflow-y:hidden;
     margin-top: 3rem;
-    background-color: black;
-
+    background-color: black ;
+    margin-top: 0px;
+    margin-bottom: 0vh;
   }
   .contact-container::-webkit-scrollbar {
     width: 8px; 
@@ -50,6 +50,7 @@ h1 span{
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px #077b32;
+    margin-top: 28px;
   }
   
   .contact-form h2 {
@@ -118,4 +119,105 @@ h1 span{
 
 
 
+}*/
+
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-height: 900px;
+  height: 100vh;
+  overflow-y: hidden;
+  margin-top: 3rem;
+  background-color: black;
+  margin-top: 0px;
+  margin-bottom: 10vh;
+  padding-bottom: 15vh;
+}
+
+h1 {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h1 span {
+  color: #077b32;
+  text-shadow: 0 0 10px #077b32;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #077b32;
+  margin-top: 28px;
+  margin-bottom: 28px;
+ 
+}
+
+.contact-image {
+  width: 100%;
+  max-width: 600px; /* Matches the width of the contact form */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #077b32;
+}
+
+.contact-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+.form-control {
+  width: 100%;
+  
+  padding: 10px;
+  border: 1px solid #077b32;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+.btn-primary {
+  background-color: #077b32;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #055a22;
+}
+
+@media (max-width: 440px) {
+  .map {
+      width: 23rem;
+      margin: 0.5rem;
+  }
+}
+
+@media (max-width: 885px) {
+  .contact-container {
+      flex-direction: column;
+      margin-top: 0;
+  }
+
+  .contact-form, .contact-image {
+      max-width: 100%;
+      margin: 0.5rem;
+  }
 }

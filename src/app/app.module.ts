@@ -19,6 +19,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { RouterModule } from '@angular/router'; // Import RouterModule
 import { faAngular, faAws, faDocker, faGit, faJava, faLinux } from '@fortawesome/free-brands-svg-icons';
 import { CertificationComponent } from './certification/certification.component';
+import { provideHttpClient } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -45,9 +47,10 @@ import { CertificationComponent } from './certification/certification.component'
     ReactiveFormsModule,
     MatDialogModule,
     RouterModule 
+  
 
   ],
-  providers: [],
+  providers: [ provideHttpClient()  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

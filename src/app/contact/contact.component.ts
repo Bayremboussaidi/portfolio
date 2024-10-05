@@ -1,4 +1,3 @@
-
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
@@ -22,9 +21,9 @@ export class ContactComponent implements OnInit {
   }
 
   ngOnInit() {
-    // Placeholder for map functionality
+    
     console.log('Map functionality has been removed.');
-    // Optionally, you can set a message in your HTML to inform users about the removal of the map.
+   
   }
 
   onSubmit() {
@@ -38,4 +37,3 @@ export class ContactComponent implements OnInit {
       });
   }
 }
-
