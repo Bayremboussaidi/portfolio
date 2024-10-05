@@ -12,7 +12,7 @@ export class ExperienceComponent implements OnInit {
     {
       id: '01',
       title: 'Software Develop (Intern)',
-      company: 'Global Enr - Misfat',
+      company: 'Global Enr - lac 2',
       date: 'juin 2024 - Aout 2024',
       description: 'Developed an intern application using Angular for the front-end and Node.js with Express for the back-end, implemented JWT for secure authentication and authorization, containerized the application using Docker and pushed images to Docker Hub, and set up a CI/CD pipeline with Jenkins triggered by GitHub commits for automated building and deployment.',
       tools: ['Docker', 'Jenkins', 'react' , 'node']
@@ -20,10 +20,10 @@ export class ExperienceComponent implements OnInit {
     {
       id: '02',
       title: 'data analyst (Intern)',
-      company: 'clenolia - france',
+      company: 'clenolia france - tunis',
       date: 'July 2022 - August 2022',
-      description: 'Developed python web scraping scripts to extract data from log files .',
-      tools: ['python']
+      description: 'Developed python web scraping scripts to extract data from log files , working on redhat machines .',
+      tools: ['python' , 'redhat']
     }
   ];
   constructor() { }
