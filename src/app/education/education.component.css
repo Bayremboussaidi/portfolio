@@ -2,7 +2,7 @@
     background-color: black;
 }
 .education-section {
-    border-radius: 15px;
+    border-radius: 0px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     background-color: black;
   }
@@ -18,7 +18,7 @@ h1{
     color: white;
     margin-left: 4rem;
 }
-  
+
   .section-title {
     font-size: 2rem;
     font-weight: 700;
@@ -26,7 +26,7 @@ h1{
     text-align: center;
     margin-bottom: 40px;
   }
-  
+
   .education-container {
     display: flex;
     flex-wrap: wrap;
@@ -36,7 +36,7 @@ h1{
     padding-top: 3rem;
   padding-bottom: 7rem;
   }
-  
+
   .education-item {
     width: 30rem;
     border: 1px solid #f9f9f934;
@@ -48,12 +48,12 @@ h1{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
   }
-  
+
   .education-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
   }
-  
+
   .education-year {
     font-size: 2rem;
     font-weight: 600;
@@ -61,12 +61,12 @@ h1{
     margin-bottom: 15px;
     text-shadow: 0  0 10px #077b32;
   }
-  
+
   .education-details {
     font-size: 1rem;
     color: #ffffff;
   }
-  
+
   .education-degree {
     font-size: 1.3rem;
     line-height: 2rem;
@@ -75,13 +75,13 @@ h1{
     text-align: center;
     margin-bottom: 40px;
   }
-  
+
   .education-institution {
     font-style: italic;
     color: #7f8c8d;
     font-size: 1rem;
   }
-  
+
   .education-description {
     margin-top: 10px;
     line-height: 1.5;
@@ -120,4 +120,3 @@ h1{
     }
 
 }
-  
