@@ -1,4 +1,4 @@
-<section class="col">
+<!--section class="col">
     <div class="main-container">
         <h1 data-aos="fade-right" data-aos-duration="1500" style=" font-weight: bold;"><span>My</span> Projects</h1>
         <div class="skills-container" data-aos="fade-left" data-aos-duration="1500">
@@ -15,6 +15,44 @@
             </div>
           </div>
     </div>
+</section-->
+
+
+
+
+<section class="col">
+  <div class="main-container">
+    <h1 data-aos="fade-right" data-aos-duration="1500">
+      <span>My</span> Projects
+    </h1>
+
+    <div class="skills-container" data-aos="fade-left" data-aos-duration="1500">
+      <div class="ticket" *ngFor="let project of projects">
+
+        <!-- Image Slider -->
+        <div class="image-slider" (click)="openDialog(project)">
+          <img *ngFor="let image of project.images; let i = index"
+               [src]="image"
+               [class.active]="isActiveImage(project.id, i)"
+               alt="Screenshot of {{ project.name }}">
+        </div>
+
+        <!-- Project Info -->
+        <div class="project-info">
+          <h3>{{ project.name }}</h3>
+          <p class="description">{{ project.description }}</p>
+
+          <div class="technologies">
+            <span *ngFor="let tech of project.technologies" class="tech">{{ tech }}</span>
+          </div>
+
+          <a class="view-code" [href]="project.codeLink" target="_blank" rel="noopener noreferrer">
+            View Code
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-  
+
