@@ -5,12 +5,12 @@
         <img *ngFor="let image of data.project.images; let i = index"
         [src]="image"
         [class.active]="isActiveImage(i)"
-        alt="Screenshot of {{ data.project.name }}">
+        alt="Screenshot von {{ data.project.name }}">
       </div>
       <p>{{data.project.description}}</p>
-      <b>Technologies : </b><span *ngFor="let tech of data.project.technologies">{{tech}}</span>
+      <b>Technologien: </b><span *ngFor="let tech of data.project.technologies">{{tech}}</span>
     </div>
     <div mat-dialog-actions class="modal-footer">
-      <button mat-button mat-dialog-close>Close</button>
+      <button mat-button mat-dialog-close>Schließen</button>
     </div>
 </div>

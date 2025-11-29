@@ -8,27 +8,27 @@ import { Component, OnInit } from '@angular/core';
 export class SideBarComponent implements OnInit {
 
   display = true;
-  isDarkBlue = false;
+  isBlack = false;
 
   constructor() { }
 
   ngOnInit(): void {
-    // Load saved theme preference
+    // Load saved theme preference - dark blue is default
     const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark-blue') {
-      this.isDarkBlue = true;
-      document.body.classList.add('dark-blue-theme');
+    if (savedTheme === 'black') {
+      this.isBlack = true;
+      document.body.classList.add('black-theme');
     }
   }
 
   toggleTheme(): void {
-    this.isDarkBlue = !this.isDarkBlue;
-    if (this.isDarkBlue) {
-      document.body.classList.add('dark-blue-theme');
-      localStorage.setItem('theme', 'dark-blue');
-    } else {
-      document.body.classList.remove('dark-blue-theme');
+    this.isBlack = !this.isBlack;
+    if (this.isBlack) {
+      document.body.classList.add('black-theme');
       localStorage.setItem('theme', 'black');
+    } else {
+      document.body.classList.remove('black-theme');
+      localStorage.setItem('theme', 'dark-blue');
     }
   }
 

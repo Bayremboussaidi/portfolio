@@ -1,28 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
-/* Theme CSS Variables */
+/* Theme CSS Variables - Dark Blue is now default */
 :root {
-    --bg-color: rgb(14, 1, 1);
-    --nav-bg-color: black;
+    --bg-color: #0a192f;
+    --nav-bg-color: #0a192f;
 }
 
-/* Dark Blue Theme - Apply to ALL elements with black background */
-body.dark-blue-theme {
-    --bg-color: #0a192f !important;
-    --nav-bg-color: #0a192f !important;
-    background-color: #0a192f !important;
+/* Black Theme - Apply when toggled */
+body.black-theme {
+    --bg-color: rgb(14, 1, 1) !important;
+    --nav-bg-color: black !important;
+    background-color: rgb(14, 1, 1) !important;
 }
 
-body.dark-blue-theme .col,
-body.dark-blue-theme .main-container,
-body.dark-blue-theme .education-section,
-body.dark-blue-theme .experience-section,
-body.dark-blue-theme .skills-container,
-body.dark-blue-theme .contact-container,
-body.dark-blue-theme .project,
-body.dark-blue-theme .certification-section,
-body.dark-blue-theme nav {
-    background-color: #0a192f !important;
+body.black-theme .col,
+body.black-theme .main-container,
+body.black-theme .education-section,
+body.black-theme .experience-section,
+body.black-theme .skills-container,
+body.black-theme .contact-container,
+body.black-theme .project,
+body.black-theme .certification-section,
+body.black-theme nav {
+    background-color: black !important;
     transition: background-color 0.3s ease;
 }
 
@@ -198,7 +198,7 @@ section{
     height: 65vh;
     border-radius: 50rem;
     overflow: hidden;
-    box-shadow: 0 0 5rem #077b32;
+    box-shadow: none;
 }
 
 .main-container .image img{

@@ -92,7 +92,7 @@ export class PortfolioComponent implements OnInit {
         'assets/img/work/loc/10.PNG'
       ],
       technologies: ["Spring Boot 2.7", "Thymeleaf", "MySQL 5.7"],
-      description: "This project involves developing a web application named 'LocationTN' aimed at people looking to rent a car without wasting time, providing all necessary information for customer satisfaction. Managers can also use it to facilitate interaction with customers.",
+      description: "Dieses Projekt umfasst die Entwicklung einer Webanwendung namens 'LocationTN', die sich an Personen richtet, die ein Auto mieten möchten, ohne Zeit zu verschwenden. Es bietet alle notwendigen Informationen zur Kundenzufriedenheit. Manager können es auch nutzen, um die Interaktion mit Kunden zu erleichtern.",
       codeLink: "https://github.com/yourusername/locationTN"
     },
     {
@@ -104,12 +104,12 @@ export class PortfolioComponent implements OnInit {
         'assets/img/work/ecomm/7.png', 'assets/img/work/ecomm/8.png'
       ],
       technologies: ["Spring Boot 2.7", "Angular 12", "MySQL 5.7"],
-      description: "An e-commerce platform for clients, administrators, influencers, and advertisers to interact in an organized manner.",
+      description: "Eine E-Commerce-Plattform für Kunden, Administratoren, Influencer und Werbetreibende zur organisierten Interaktion.",
       codeLink: "https://github.com/yourusername/estore"
     },
 
         {
-      id: 1,
+      id: 2,
       name: 'E-Store',
       images: [
         'assets/img/work/ecomm/1.png', 'assets/img/work/ecomm/2.png', 'assets/img/work/ecomm/3.png',
@@ -117,13 +117,13 @@ export class PortfolioComponent implements OnInit {
         'assets/img/work/ecomm/7.png', 'assets/img/work/ecomm/8.png'
       ],
       technologies: ["Spring Boot 2.7", "Angular 12", "MySQL 5.7"],
-      description: "An e-commerce platform for clients, administrators, influencers, and advertisers to interact in an organized manner.",
+      description: "Eine E-Commerce-Plattform für Kunden, Administratoren, Influencer und Werbetreibende zur organisierten Interaktion.",
       codeLink: "https://github.com/yourusername/estore"
     },
 
 
         {
-      id: 1,
+      id: 3,
       name: 'E-Store',
       images: [
         'assets/img/work/ecomm/1.png', 'assets/img/work/ecomm/2.png', 'assets/img/work/ecomm/3.png',
@@ -131,13 +131,13 @@ export class PortfolioComponent implements OnInit {
         'assets/img/work/ecomm/7.png', 'assets/img/work/ecomm/8.png'
       ],
       technologies: ["Spring Boot 2.7", "Angular 12", "MySQL 5.7"],
-      description: "An e-commerce platform for clients, administrators, influencers, and advertisers to interact in an organized manner.",
+      description: "Eine E-Commerce-Plattform für Kunden, Administratoren, Influencer und Werbetreibende zur organisierten Interaktion.",
       codeLink: "https://github.com/yourusername/estore"
     },
 
 
         {
-      id: 1,
+      id: 4,
       name: 'E-Store',
       images: [
         'assets/img/work/ecomm/1.png', 'assets/img/work/ecomm/2.png', 'assets/img/work/ecomm/3.png',
@@ -145,7 +145,7 @@ export class PortfolioComponent implements OnInit {
         'assets/img/work/ecomm/7.png', 'assets/img/work/ecomm/8.png'
       ],
       technologies: ["Spring Boot 2.7", "Angular 12", "MySQL 5.7"],
-      description: "An e-commerce platform for clients, administrators, influencers, and advertisers to interact in an organized manner.",
+      description: "Eine E-Commerce-Plattform für Kunden, Administratoren, Influencer und Werbetreibende zur organisierten Interaktion.",
       codeLink: "https://github.com/yourusername/estore"
     }
   ];

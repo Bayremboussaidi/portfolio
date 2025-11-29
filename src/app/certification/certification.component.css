@@ -1,7 +1,9 @@
 .education-section {
   border-radius: 0;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  background-color: black;
+  background-color: #0a192f;
+  padding-bottom: 50px;
+  min-height: 100vh;
 }
 
 h1 span {
@@ -10,11 +12,12 @@ h1 span {
 }
 
 h1 {
-  font-size: clamp(4rem, 1rem + 5vw, 1.8rem);
-  line-height: 5rem;
+  font-size: clamp(1.8rem, 1rem + 2vw, 3rem);
+  line-height: 1.3;
   text-shadow: 0 0 10px white;
   color: white;
-  margin-left: 4rem;
+  margin-left: 2rem;
+  padding-top: 2rem;
 }
 
 .section-title {
@@ -28,35 +31,38 @@ h1 {
 .education-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  max-height: 700px;
-  margin-top: 0;
-  padding-top: 3rem;
-  padding-bottom: 7rem;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  padding-bottom: 50px;
 }
 
 /* 3D perspective container */
 .education-item {
-  width: 30rem;
-  margin: 10px;
+  width: 100%;
+  max-width: 380px;
+  min-width: 280px;
+  flex: 1 1 300px;
   perspective: 1000px;
   background: transparent;
   border: none;
   padding: 0;
   cursor: pointer;
-  outline: none; /* remove outline but keep tabindex for accessibility */
+  outline: none;
 }
 
 /* The flipping card */
 .education-card {
   position: relative;
   width: 100%;
-  min-height: 300px;
+  min-height: 280px;
   transform-style: preserve-3d;
   transition: transform 0.6s ease, box-shadow 0.6s ease;
   border-radius: 8px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  overflow: visible; /* important for back face visibility */
+  overflow: visible;
 }
 
 /* Flip card on hover or focus (keyboard accessible) */
@@ -82,7 +88,7 @@ h1 {
 .education-front {
   background-color: #f9f9f921;
   border: 1px solid #f9f9f934;
-  padding: 1rem;
+  padding: 1.5rem;
   text-align: center;
   color: #ffffff;
   display: flex;
@@ -114,8 +120,8 @@ h1 {
 
 /* Text styles */
 .education-year {
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: clamp(1.1rem, 0.8rem + 1vw, 1.5rem);
+  font-weight: 600;
   color: #077b32;
   margin-bottom: 15px;
   text-shadow: 0 0 10px #077b32;
@@ -127,12 +133,12 @@ h1 {
 }
 
 .education-degree {
-  font-size: 1.3rem;
-  line-height: 2rem;
+  font-size: clamp(1rem, 0.8rem + 0.5vw, 1.3rem);
+  line-height: 1.5;
   font-weight: 700;
   color: #ffffff;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .education-institution {
@@ -144,10 +150,10 @@ h1 {
 .education-description {
   margin-top: 10px;
   line-height: 1.5;
+  font-size: clamp(0.85rem, 0.7rem + 0.5vw, 1rem);
 }
 
 /* Background images for the back faces */
-/* IMPORTANT: Adjust paths to your Angular assets root */
 .education-back.aws-bg {
   background-image: url('/assets/img/certf/awsccp.webp');
 }
@@ -163,29 +169,63 @@ h1 {
 /* Responsive adjustments */
 @media (max-width: 1060px) {
   h1 {
-    font-size: clamp(3rem, 1rem + 5vw, 1.8rem);
-    margin-left: 0;
+    font-size: clamp(1.5rem, 1rem + 2vw, 2.5rem);
+    margin-left: 1rem;
+    text-align: center;
   }
+
   .education-container {
-    overflow-y: auto;
-    max-height: 700px;
+    padding: 1.5rem 1rem;
   }
 }
 
-@media (max-width: 641px) {
+@media (max-width: 768px) {
   h1 {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
+    font-size: 1.5rem;
     margin-left: 0;
+    text-align: center;
+    padding: 1rem;
   }
+
   .education-container {
-    padding-top: 0;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    padding-bottom: 50px;
   }
+
   .education-item {
-    width: 20rem;
+    max-width: 90%;
   }
+
   .education-card {
-    min-height: 200px;
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.3rem;
+    padding: 1rem 0.5rem;
+  }
+
+  .education-item {
+    max-width: 95%;
+  }
+
+  .education-card {
+    min-height: 220px;
+  }
+
+  .education-front {
+    padding: 1rem;
+  }
+
+  .education-year {
+    font-size: 1.1rem;
+  }
+
+  .education-description {
+    font-size: 0.85rem;
   }
 }
