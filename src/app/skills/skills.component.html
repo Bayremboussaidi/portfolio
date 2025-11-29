@@ -1,16 +1,70 @@
-<section class="col">
-    <div class="main-container">
-        <div class="skills-container" data-aos="fade-up" data-aos-duration="1500">
-            <div  class="ticket" *ngFor="let image of images">
-                <div class="project">
-                    <div class="image-slider">
-                      <img [src]="image.url">
-                    </div>
-                    <h3>{{ image.name }}</h3>
-                </div>
+<section class="skills-section">
+  <div class="skills-header" data-aos="fade-down" data-aos-duration="1000">
+    <h1 class="skills-title">Meine <span>Fähigkeiten</span></h1>
+    <p class="skills-subtitle">Technische Kompetenzen & Expertise</p>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-category" *ngFor="let category of skillCategories; let i = index"
+         [attr.data-aos]="i % 2 === 0 ? 'fade-right' : 'fade-left'"
+         data-aos-duration="800"
+         [attr.data-aos-delay]="i * 100">
+
+      <div class="category-header">
+        <h2 class="category-title">{{ category.title }}</h2>
+        <span class="category-subtitle">{{ category.titleEn }}</span>
+      </div>
+
+      <div class="skills-list">
+        <div class="skill-item" *ngFor="let skill of category.skills">
+          <div class="skill-info">
+            <i [class]="skill.icon" [style.color]="skill.color"></i>
+            <span class="skill-name">{{ skill.name }}</span>
+            <span class="skill-percent">{{ skill.level }}%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-progress"
+                 [style.width.%]="skill.level"
+                 [style.background]="'linear-gradient(90deg, ' + skill.color + ', ' + skill.color + '88)'">
             </div>
           </div>
+        </div>
+      </div>
     </div>
-</section>
+  </div>
 
-  
+  <div class="additional-info" data-aos="fade-up" data-aos-duration="1000">
+    <div class="info-card">
+      <i class="fas fa-language"></i>
+      <h3>Sprachkenntnisse</h3>
+      <div class="language-list">
+        <div class="language-item">
+          <span>🇩🇪 Deutsch</span>
+          <div class="lang-level">B2 - Fortgeschritten</div>
+        </div>
+        <div class="language-item">
+          <span>🇬🇧 Englisch</span>
+          <div class="lang-level">C1 - Fließend</div>
+        </div>
+        <div class="language-item">
+          <span>🇫🇷 Französisch</span>
+          <div class="lang-level">C2 - Verhandlungssicher</div>
+        </div>
+        <div class="language-item">
+          <span>🇹🇳 Arabisch</span>
+          <div class="lang-level">Muttersprache</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <i class="fas fa-certificate"></i>
+      <h3>Zertifizierungen</h3>
+      <ul class="cert-list">
+        <li>AWS Cloud Practitioner (in Vorbereitung)</li>
+        <li>Scrum Master Zertifiziert</li>
+        <li>Docker Certified Associate</li>
+      </ul>
+    </div>
+  </div>
+</section>

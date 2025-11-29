@@ -23,7 +23,7 @@
 <section class="col">
   <div class="main-container">
     <h1 data-aos="fade-right" data-aos-duration="1500">
-      <span>My</span> Projects
+      <span>Meine</span> Projekte
     </h1>
 
     <div class="skills-container" data-aos="fade-left" data-aos-duration="1500">
@@ -34,7 +34,7 @@
           <img *ngFor="let image of project.images; let i = index"
                [src]="image"
                [class.active]="isActiveImage(project.id, i)"
-               alt="Screenshot of {{ project.name }}">
+               alt="Screenshot von {{ project.name }}">
         </div>
 
         <!-- Project Info -->
@@ -47,7 +47,7 @@
           </div>
 
           <a class="view-code" [href]="project.codeLink" target="_blank" rel="noopener noreferrer">
-            View Code
+            Code ansehen
           </a>
         </div>
       </div>

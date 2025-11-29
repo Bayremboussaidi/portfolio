@@ -391,7 +391,7 @@ section{
   nav .links {
     display: none;
   }
-  
+
   .dropdown {
     display: block !important;
   }
@@ -401,19 +401,19 @@ section{
   section {
     padding: 1rem !important;
   }
-  
+
   .main-container {
     flex-direction: column;
     max-height: none;
     padding: 1rem;
   }
-  
+
   .main-container .image {
     width: 200px;
     height: 200px;
     margin-bottom: 2rem;
   }
-  
+
   .main-container .content {
     text-align: center;
   }
@@ -423,7 +423,7 @@ section{
   nav {
     padding: 0 1rem;
   }
-  
+
   .theme-toggle {
     width: 40px;
     height: 40px;
