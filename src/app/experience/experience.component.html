@@ -1,44 +1,89 @@
-
-
-
 <section class="experience-section">
-    <h1 class="experience-title" data-aos="fade-right" data-aos-duration="1500" style="text-shadow: 0  0 10px #077b32;"> My<span  style="color: white;text-shadow: 0  0 10px white;"> Experience</span></h1>
-    <div class="experience-container" data-aos="fade-up" data-aos-duration="1500">
-      <div class="experience-card" *ngFor="let exp of experiences">
-        <div class="experience-content">
-          <h3>{{ exp.title }}</h3>
-          <p class="company">{{ exp.company }}</p>
-          <p class="date">{{ exp.date }}</p>
-          <p class="description">{{ exp.description }}</p>
-        </div>
-        <div class="experience-back">
-            <h2 style="color: white;">Tools</h2>
-            <div class="skills-grid">
-                <div class="skill-item" *ngFor="let tool of exp.tools" >
-                    <i *ngIf="tool =='Angular'" class="fab fa-angular"></i>
-                    <i *ngIf="tool =='Spring Boot'" class="fa-brands fa-java"></i>
-                    <i *ngIf="tool =='Hyper-V'" class="fas fa-server"></i>
-                    <i *ngIf="tool =='Docker'" class="fab fa-docker"></i>
-                    <i *ngIf="tool =='gitlab'" class="fab fa-gitlab"></i>
-                    <i *ngIf="tool =='Jenkins'" class="fab fa-jenkins"></i>
-                    <i *ngIf="tool =='react'" class="fa-brands fa-react"></i> <i ></i>
-                    <i *ngIf="tool =='python'" class="fa-brands fa-python"></i>
-                    <i *ngIf="tool =='node'" class="fa-brands fa-node">></i>
-                    <i *ngIf="tool =='redhat'" class="fa-brands fa-redhat"></i>
-                    <i *ngIf="tool =='terraform'" class="fab fa-terraform"></i>
-                    <i *ngIf="tool =='keycloak'" class="fa-solid fa-key"></i>
-                    <i *ngIf="tool =='AWS'" class="fa-brands fa-aws"></i>
-                    <i *ngIf="tool =='MySQL' || tool == 'SQL Server'" class="fas fa-database"></i>
-                    <p>{{ tool }}</p>
-                  </div>
-            </div>
+  <h1 class="experience-title" data-aos="fade-right" data-aos-duration="1500" style="text-shadow: 0 0 10px #077b32;">
+    My<span style="color: white; text-shadow: 0 0 10px white;"> Experience</span>
+  </h1>
 
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
+  <div class="experience-container" data-aos="fade-up" data-aos-duration="1500">
+    <div class="experience-card" *ngFor="let exp of experiences">
 
+      <!-- Front side -->
+      <div class="experience-content">
+        <h3>{{ exp.title }}</h3>
+        <p class="company">{{ exp.company }}</p>
+        <p class="date">{{ exp.date }}</p>
+        <p class="description">{{ exp.description }}</p>
 
-        </div>
+        <!-- GitHub button on front -->
+        <a *ngIf="exp.github" href="{{ exp.github }}" target="_blank" class="github-link">
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
       </div>
+
+      <!-- Back side -->
+      <div class="experience-back">
+        <h2 style="color: white;">Tools</h2>
+        <div class="skills-grid">
+          <div class="skill-item" *ngFor="let tool of exp.tools">
+
+            <!-- Frontend -->
+            <i *ngIf="tool == 'Angular'" class="fab fa-angular" title="Angular"></i>
+            <i *ngIf="tool == 'React'" class="fab fa-react" title="React"></i>
+
+            <!-- Backend -->
+            <i *ngIf="tool == 'Spring Boot'" class="fa-brands fa-java" title="Spring Boot"></i>
+            <i *ngIf="tool == 'Node.js' || tool == 'Node.js (Express)'" class="fab fa-node-js" title="Node.js / Express"></i>
+            <i *ngIf="tool == 'Python'" class="fab fa-python" title="Python"></i>
+
+            <!-- Databases -->
+            <i *ngIf="tool == 'MySQL' || tool == 'SQL Server'" class="fas fa-database" title="Database"></i>
+            <i *ngIf="tool == 'MongoDB'"><img src="assets/icons/mongodb.svg" class="tool-icon" title="MongoDB"></i>
+
+            <!-- DevOps / CI/CD -->
+            <i *ngIf="tool == 'Docker'" class="fab fa-docker" title="Docker"></i>
+            <i *ngIf="tool == 'Kubernetes'" class="fas fa-network-wired" title="Kubernetes"></i>
+            <i *ngIf="tool == 'Jenkins'" class="fab fa-jenkins" title="Jenkins"></i>
+            <i *ngIf="tool == 'GitLab'" class="fab fa-gitlab" title="GitLab"></i>
+            <i *ngIf="tool == 'VMware'" class="fas fa-server" title="VMware"></i>
+            <i *ngIf="tool == 'ArgoCD'" class="fas fa-project-diagram" title="ArgoCD"></i>
+            <i *ngIf="tool == 'Terraform'" class="fab fa-terraform" title="Terraform"></i>
+
+            <!-- Security / Auth -->
+            <i *ngIf="tool == 'Keycloak'" class="fas fa-key" title="Keycloak"></i>
+            <i *ngIf="tool == 'JWT'" class="fas fa-shield-alt" title="JWT"></i>
+
+            <!-- Automation / Scheduling -->
+            <i *ngIf="tool == 'node-cron'" class="fas fa-clock" title="node-cron"></i>
+
+            <!-- File / PDF -->
+            <i *ngIf="tool == 'pdfkit'" class="fas fa-file-pdf" title="pdfkit"></i>
+            <i *ngIf="tool == 'multer'" class="fas fa-file-upload" title="multer"></i>
+
+            <!-- Communication / APIs -->
+            <i *ngIf="tool == 'SMTP'" class="fas fa-envelope" title="SMTP"></i>
+            <i *ngIf="tool == 'FastAPI'" class="fas fa-network-wired" title="FastAPI"></i>
+            <i *ngIf="tool == 'GPT'" class="fas fa-robot" title="GPT / AI"></i>
+
+            <!-- Others -->
+            <i *ngIf="tool == 'Hyper-V'" class="fas fa-server" title="Hyper-V"></i>
+            <i *ngIf="tool == 'RedHat'" class="fa-brands fa-redhat" title="RedHat"></i>
+            <i *ngIf="tool == 'Express'" class="fas fa-server" title="Express"></i>
+            <i *ngIf="tool == 'PrimeNG'" class="fas fa-layer-group" title="PrimeNG"></i>
+            <i *ngIf="tool == 'TypeScript'" class="fas fa-code" title="TypeScript"></i>
+
+            <p>{{ tool }}</p>
+          </div>
+        </div>
+
+        <!-- GitHub button on back -->
+        <a *ngIf="exp.github" href="{{ exp.github }}" target="_blank" class="github-link">
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
+      </div>
+
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+
     </div>
-  </section>
+  </div>
+</section>
