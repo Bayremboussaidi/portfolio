@@ -1,10 +1,12 @@
 <section class="experience-section">
-  <h1 class="experience-title">
+  <h1 class="experience-title" data-aos="fade-right" data-aos-duration="1500">
     My<span> Experience</span>
   </h1>
 
   <div class="timeline">
-    <div class="timeline-item" *ngFor="let exp of experiences; let i = index">
+    <div class="timeline-item" *ngFor="let exp of experiences; let i = index"
+         [attr.data-aos]="i % 2 === 0 ? 'fade-right' : 'fade-left'"
+         data-aos-duration="1000">
 
       <div class="timeline-dot"></div>
       <div class="timeline-date">{{ exp.date }}</div>
