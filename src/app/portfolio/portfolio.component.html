@@ -23,31 +23,44 @@
 <section class="col">
   <div class="main-container">
     <h1 data-aos="fade-right" data-aos-duration="1500">
-      <span>Meine</span> Projekte
+      <span>Academic & Personal</span> Projects
     </h1>
 
-    <div class="skills-container" data-aos="fade-left" data-aos-duration="1500">
-      <div class="ticket" *ngFor="let project of projects">
+    <!-- Section Description -->
+    <p class="section-description" data-aos="fade-up" data-aos-duration="1000">
+      {{ sectionDescription }}
+    </p>
 
-        <!-- Image Slider -->
-        <div class="image-slider" (click)="openDialog(project)">
-          <img *ngFor="let image of project.images; let i = index"
-               [src]="image"
-               [class.active]="isActiveImage(project.id, i)"
-               alt="Screenshot von {{ project.name }}">
-        </div>
+    <div class="skills-container" data-aos="fade-left" data-aos-duration="1500">
+      <div class="ticket" *ngFor="let project of projects" [class.featured]="project.featured">
+
+        <!-- Featured Badge -->
+        <div class="featured-badge" *ngIf="project.featured">⭐ Featured Project</div>
+
+        <!-- Category Badge -->
+        <div class="category-badge">{{ project.category }}</div>
 
         <!-- Project Info -->
         <div class="project-info">
           <h3>{{ project.name }}</h3>
           <p class="description">{{ project.description }}</p>
 
+          <!-- Key Features -->
+          <div class="key-features" *ngIf="project.keyFeatures">
+            <strong>Key Features:</strong>
+            <ul>
+              <li *ngFor="let feature of project.keyFeatures">{{ feature }}</li>
+            </ul>
+          </div>
+
+          <!-- Technologies -->
           <div class="technologies">
             <span *ngFor="let tech of project.technologies" class="tech">{{ tech }}</span>
           </div>
 
+          <!-- View Code Link -->
           <a class="view-code" [href]="project.codeLink" target="_blank" rel="noopener noreferrer">
-            Code ansehen
+            View Code on GitHub
           </a>
         </div>
       </div>
