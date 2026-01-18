@@ -15,10 +15,9 @@ export class SkillsComponent implements OnInit {
       titleEn: 'Frontend Development',
       skills: [
         { name: 'Angular', icon: 'fab fa-angular', level: 90, color: '#dd0031' },
-        { name: 'React JS', icon: 'fab fa-react', level: 75, color: '#61dafb' },
+        { name: 'React JS', icon: 'fab fa-react', level: 70, color: '#61dafb' },
         { name: 'TypeScript', icon: 'fas fa-code', level: 85, color: '#3178c6' },
         { name: 'HTML/CSS', icon: 'fab fa-html5', level: 95, color: '#e34f26' },
-        { name: 'Flutter', icon: 'fas fa-mobile-alt', level: 60, color: '#02569b' }
       ]
     },
     {
@@ -45,11 +44,11 @@ export class SkillsComponent implements OnInit {
       titleEn: 'DevOps & Cloud',
       skills: [
         { name: 'Docker', icon: 'fab fa-docker', level: 85, color: '#2496ed' },
-        { name: 'Kubernetes', icon: 'fas fa-dharmachakra', level: 70, color: '#326ce5' },
+        { name: 'Kubernetes', icon: 'fas fa-dharmachakra', level: 50, color: '#326ce5' },
         { name: 'Jenkins', icon: 'fab fa-jenkins', level: 80, color: '#d24939' },
         { name: 'GitLab CI/CD', icon: 'fab fa-gitlab', level: 80, color: '#fc6d26' },
-        { name: 'Terraform', icon: 'fas fa-cloud', level: 65, color: '#7b42bc' },
-        { name: 'AWS', icon: 'fab fa-aws', level: 60, color: '#ff9900' }
+        { name: 'Terraform', icon: 'fas fa-cloud', level: 60, color: '#7b42bc' },
+        { name: 'AWS', icon: 'fab fa-aws', level: 70, color: '#ff9900' }
       ]
     },
     {

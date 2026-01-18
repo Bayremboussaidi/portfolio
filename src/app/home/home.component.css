@@ -8,6 +8,37 @@
     margin-bottom: 2rem;
 }
 
+
+.cv-btn {
+  display: inline-block;
+  padding: 12px 26px;
+  background-color: #077b32; /* green */
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  border: 2px solid #077b32;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.3s ease;
+}
+
+.cv-btn:hover {
+  background-color: transparent;
+  color: #077b32;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(7, 123, 50, 0.4);
+}
+
+.cv-btn {
+  margin-top: 4rem;   /* ⬅ Abstand nach oben */
+}
+
+
 @media (max-width:1300px) {
     .typewriter{
         line-height: 3rem;
