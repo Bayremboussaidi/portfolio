@@ -17,7 +17,7 @@ export class SkillsComponent implements OnInit {
         { name: 'Angular', icon: 'fab fa-angular', level: 90, color: '#dd0031' },
         { name: 'React JS', icon: 'fab fa-react', level: 70, color: '#61dafb' },
         { name: 'TypeScript', icon: 'fas fa-code', level: 85, color: '#3178c6' },
-        { name: 'HTML/CSS', icon: 'fab fa-html5', level: 95, color: '#e34f26' },
+        { name: 'HTML/CSS', icon: 'fab fa-html5', level: 75, color: '#e34f26' },
       ]
     },
     {
